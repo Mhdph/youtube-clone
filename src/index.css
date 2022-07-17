@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-default: #000000;
+    --color-background-default: #ffffff;
+  }
+  .dark {
+    --color-text-default: #ffffff;
+    --color-background-default: #202020;
+  }
+}
+
+@layer components {
+  .item {
+    @apply flex items-center gap-5 cursor-pointer py-2;
+  }
+}
