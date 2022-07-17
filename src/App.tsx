@@ -8,7 +8,7 @@ function App() {
     <div className="flex">
       <Sidebar />
       <div className="flex-[7]">
-        <HeaderT />
+        <Header />
         <div>
           <img src={reactLogo} className="h-8 w-8" alt="" />
         </div>
