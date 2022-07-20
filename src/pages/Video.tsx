@@ -10,7 +10,7 @@ import Comments from "../components/Comments";
 
 type VideoProps = {};
 
-const Video: React.FC<VideoProps> = () => {
+const Video: React.FC<VideoProps> = ({ type }: any) => {
   return (
     <div className="flex gap-6">
       <div className="flex-[5]">
@@ -45,8 +45,8 @@ const Video: React.FC<VideoProps> = () => {
             </div>
           </div>
         </div>
-        <hr className="my-4 border border-opacity-50" />
-        <div className="flex justify-between">
+        <hr className="my-4  border-opacity-10" />
+        <div className="flex justify-between items-center">
           <div className="flex gap-4">
             <img
               className="h-12 w-12 rounded-full"
@@ -54,7 +54,7 @@ const Video: React.FC<VideoProps> = () => {
             />
             <div className="flex flex-col text-primary-default">
               <span className="font-medium">Lama Dev</span>
-              <span className="mt-1 mv04 text-primary-default text-xs">
+              <span className="mt-1 mb-4 text-primary-default text-xs">
                 200K subscribers
               </span>
               <p className="text-sm">
@@ -65,20 +65,20 @@ const Video: React.FC<VideoProps> = () => {
               </p>
             </div>
           </div>
-          <button className="bg-[#cc1a00] font-medium text-white border-none rounded max-h-max cursor-pointer py-2.5 px-4">
+          <button className="bg-[#cc1a00] font-medium h-12 text-white border-none rounded cursor-pointer py-2.5 px-4">
             SUBSCRIBE
           </button>
         </div>
-        <hr className="my-4 border border-opacity-50" />
+        <hr className="my-4 border-opacity-10" />
         <Comments />
       </div>
       <div className="flex-[2]">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card type={"sm"} />
+        <Card type={"sm"} />
+        <Card type={"sm"} />
+        <Card type={"sm"} />
+        <Card type={"sm"} />
+        <Card type={"sm"} />
       </div>
     </div>
   );

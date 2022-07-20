@@ -3,15 +3,7 @@ import Card from "../components/Card";
 
 const Home = () => {
   return (
-    <div className="flex justify-between flex-wrap">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+    <div className="grid  grid-cols-4 gap-2.5">
       <Card />
       <Card />
       <Card />
